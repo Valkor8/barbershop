@@ -1,0 +1,97 @@
+html {
+
+}
+
+*,
+body {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial sans-serif;
+
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+
+    background-color: #000000;
+    background-image: url("../img/Layer.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1;
+    border: 0;
+    padding: 0;
+    clip: rect (0 0 0 0);
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+.site {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.header {
+    font-size: 16px
+}
+.nav {
+    min-height: 70px;
+    color: #ffffff;
+    background-color: black;
+
+    font-size: 16px;
+    line-height: 20px;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 0;
+    }
+
+.nav-item {
+    margin: 0;
+    text-align: center;
+}
+
+.nav-item ul {
+    display: flex;
+    width: 100%;
+}
+
+.nav li {
+    margin-right: 40px;
+    list-style-type: none;
+    text-transform: uppercase;
+
+
+}
+.nav a {
+    color: #fff;
+}
+.logo {
+    position: absolute;
+    left: 50%;
+    bottom: -165px;
+    margin-left: -184px;
+}
+
+.nav-login::before {
+    background-image: url(../img/login.svg);
+    background-color: #fff;
+}
