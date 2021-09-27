@@ -8,27 +8,26 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <header class="main-header main-header-items">
+        <header class="main-header">
             <nav class="main-navigation">
+                <a class="main-header-logo" href="index.html">
+                    <img src="img/index-logo.svg" width="368" height="160" alt="Логотип Барбершопа "Бородинский"">
+                </a>
                 <div class="main-navigation-wrapper">
-                  <div class="container">
-                    <ul class="site-navigation">
-                        <li><a class="header-logo-small" href="index.html">
-                        <img src="img/logo.svg" width="111" height="24" alt="Логотип Барбершопа "Бородинский"">
-                        </a></li>
-                        <li><a href="info.html">Информация</a></li>
-                        <li><a href="news.html">Новости</a></li>
-                        <li><a href="price.html">Прайс-лист</a></li>
-                        <div class="active"><li>Магазин</li></div>
-                        <li><a href="contacts.html">Контакты</a></li>
-                    </ul>
-
-                    <ul class="user-navigation">
+                   <div class="container">
+                        <ul class="site-navigation">
+                            <li><a href="info.html">Информация</a></li>
+                            <li><a href="news.html">Новости</a></li>
+                            <li><a href="price.html">Прайс-лист</a></li>
+                            <li><a href="shop.html">Магазин</a></li>
+                            <li><a href="contacts.html">Контакты</a></li>
+                        </ul>
+                        <ul class="user-navigation">
                             <li>
-                                <a class="login-link" href="login.html">Вход</a>
+                                <a class="login-link" href="#">Вход</a>
                             </li>
-                    </ul>
-                   </div>
+                        </ul>
+                    </div>
                 </div>
             </nav>
         </header>
@@ -111,5 +110,32 @@
                 </p>
             </div>
         </footer>
+        <section class="modal modal-login">
+            <h2>Личный кабинет</h2>
+            <p class="modal-description">Введите, пожалуйста, свой логин и пароль</p>
+            <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+                <p>
+                    <label class="visually-hidden" for="user-login">Логин</label>
+                    <input class="login-icon-user" id="user-login" type="email" name="login" placeholder="email@example.com">
+                </p>
+                <p>
+                    <label class="visually-hidden" for="user-password">Пароль</label>
+                    <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="*********">
+                </p>
+                <p class="login-help">
+                    <label class="login-checkbox" for="login-password-info">Запомните меня
+                    <input class="visually-hidden" id="login-password-info" type="checkbox" name="remember">
+                    <span class="checkbox-indicator"></span>
+                    </label>
+
+                    <a class="restore" href="#">Я забыл пароль</a>
+                </p>
+                <button class="button" type="submit">Войти</button>
+            </form>
+            <button class="modal-close" type="button">
+                <span class="visually-hidden">Закрыть</span>
+            </button>
+        </section>
+        <script src="js/popup.js"></script>
     </body>
 </html>
